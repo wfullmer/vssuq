@@ -17,7 +17,7 @@ figname = 'default';
 
 %-----------------------------------------
 % required usr input
-name    = 'dp_hdpe_l'; 
+name    = 'rhop_glass'; 
 dat_dir = '../../data/particle_properties/';
 dat_ext = '.txt'; 
 fig_dir = '../../figs/particle_properties/';
@@ -25,12 +25,16 @@ fig_ext = '.png';
 
 %concat input data filename and output figure name
 dat_name = strcat(dat_dir,name,dat_ext); 
-fig_name = strcat(fig_dir,name,fig_ext); %'../../figs/particle_properties/dp_glass.png';
+fig_name = strcat(fig_dir,name,fig_ext); 
 
 %-----------------------------------------
 % import and manipulate data 
-dat     = importdata(dat_name); 
-N       = size(dat,1);
+dat_all = importdata(dat_name); %V1(ml) m1(1) V2(ml) m2(g) 
+N       = size(dat_all,1);
+dV      = dat_all(:,3) - dat_all(:,1); %(ml)
+dm      = dat_all(:,2) - dat_all(:,4); %(g)
+rhop    = dm./dV;                      %(g/cm^3)
+dat     = 1000.0.*rhop;                %(kg/m^3) 
 dat_srt = sort(dat);
 dP      = 1./double(N);
 xy      = zeros(2*N,2);
@@ -50,7 +54,6 @@ fprintf(1,'*  stdev   = %10.4f\n',std(dat));
 fprintf(1,'*  95 CI   = %10.4f\n',std(dat)*tinv(0.975,N-1)/sqrt(double(N)));
 
 
-
 %-----------------------------------------
 % plot  
 close('all')
@@ -63,13 +66,13 @@ ecdf1 = plot(xy(:,1),xy(:,2), '-k', 'LineWidth', lw);
 
 % axes
 axis square
-%set(gca,'XLim',[0.5 20]);   
-set(gca,'YLim',[0 1]);     
-set(gca,'XTick',0:200:10000)
+%set(gca,'XLim',[0.5 20]);    
+set(gca,'YLim',[0 1]);        
+%set(gca,'XTick',[0.1 1 10])
 set(gca,'YTick',0.0:0.1:1.0)
 
 % Titles & labels
-xlabel('d_p (microns)', 'FontSize', tfsz); %, 'rot', 0);
+xlabel('\rho_p (kg/m^3)', 'FontSize', tfsz); %, 'rot', 0);
 ylabel('eCDF', 'FontSize', tfsz);
 
 % print

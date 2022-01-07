@@ -17,7 +17,7 @@ figname = 'default';
 
 %-----------------------------------------
 % required usr input
-name    = 'dp_hdpe_l'; 
+name    = 'psi_hdpe_s'; 
 dat_dir = '../../data/particle_properties/';
 dat_ext = '.txt'; 
 fig_dir = '../../figs/particle_properties/';
@@ -25,7 +25,7 @@ fig_ext = '.png';
 
 %concat input data filename and output figure name
 dat_name = strcat(dat_dir,name,dat_ext); 
-fig_name = strcat(fig_dir,name,fig_ext); %'../../figs/particle_properties/dp_glass.png';
+fig_name = strcat(fig_dir,name,fig_ext); 
 
 %-----------------------------------------
 % import and manipulate data 
@@ -50,7 +50,6 @@ fprintf(1,'*  stdev   = %10.4f\n',std(dat));
 fprintf(1,'*  95 CI   = %10.4f\n',std(dat)*tinv(0.975,N-1)/sqrt(double(N)));
 
 
-
 %-----------------------------------------
 % plot  
 close('all')
@@ -63,13 +62,13 @@ ecdf1 = plot(xy(:,1),xy(:,2), '-k', 'LineWidth', lw);
 
 % axes
 axis square
-%set(gca,'XLim',[0.5 20]);   
-set(gca,'YLim',[0 1]);     
-set(gca,'XTick',0:200:10000)
+%set(gca,'XLim',[0.5 20]);  
+set(gca,'YLim',[0 1]);       
+%set(gca,'XTick',[0.1 1 10])
 set(gca,'YTick',0.0:0.1:1.0)
 
 % Titles & labels
-xlabel('d_p (microns)', 'FontSize', tfsz); %, 'rot', 0);
+xlabel('\Psi_p (-)', 'FontSize', tfsz); %, 'rot', 0);
 ylabel('eCDF', 'FontSize', tfsz);
 
 % print

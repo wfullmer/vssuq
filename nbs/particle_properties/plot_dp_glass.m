@@ -25,11 +25,11 @@ fig_ext = '.png';
 
 %concat input data filename and output figure name
 dat_name = strcat(dat_dir,name,dat_ext); 
-fig_name = strcat(fig_dir,name,fig_ext); %'../../figs/particle_properties/dp_glass.png';
+fig_name = strcat(fig_dir,name,fig_ext); 
 
 %-----------------------------------------
 % import and manipulate data 
-dat     = importdata(dat_name); %'../../data/particle_properties/tmp.dat');
+dat     = importdata(dat_name); 
 N       = size(dat,1);
 dat_srt = sort(dat);
 dP      = 1./double(N);
@@ -44,10 +44,10 @@ for ii = 1:N
 end
 
 % print data stats
-fprintf(1,'  median  = %10.4f\n',median(dat));
-fprintf(1,'  mean    = %10.4f\n',mean(dat));
-fprintf(1,'  stdev   = %10.4f\n',std(dat));
-fprintf(1,'  95 CI   = %10.4f\n',std(dat)*tinv(0.975,N-1)/sqrt(double(N)));
+fprintf(1,'*  median  = %10.4f\n',median(dat));
+fprintf(1,'*  mean    = %10.4f\n',mean(dat));
+fprintf(1,'*  stdev   = %10.4f\n',std(dat));
+fprintf(1,'*  95 CI   = %10.4f\n',std(dat)*tinv(0.975,N-1)/sqrt(double(N)));
 
 
 %-----------------------------------------
@@ -62,15 +62,14 @@ ecdf1 = plot(xy(:,1),xy(:,2), '-k', 'LineWidth', lw);
 
 % axes
 axis square
-%set(gca,'XLim',[0.5 20]);    %xlim([0.1 0.4]);
-set(gca,'YLim',[0 1]);        %ylim([0 30]);
+%set(gca,'XLim',[0.5 20]);    
+set(gca,'YLim',[0 1]);        
 %set(gca,'XTick',[0.1 1 10])
 set(gca,'YTick',0.0:0.1:1.0)
 
 % Titles & labels
 xlabel('d_p (microns)', 'FontSize', tfsz); %, 'rot', 0);
 ylabel('eCDF', 'FontSize', tfsz);
-%legend([cv1 cv2], {'$W_i = 1$', '$W_i = 1/h_i$'}, 'Interpreter', 'LaTex', 'Location', 'NorthEast');
 
 % print
 set(gcf,'InvertHardcopy','on');
