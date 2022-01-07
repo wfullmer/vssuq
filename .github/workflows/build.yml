@@ -24,6 +24,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Clean docs build
+        run: make -C docs clean
+
       - name: Build docs in HTML 
         run: make -C docs html
         env:
@@ -35,6 +38,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
-          build_dir: docs/_build
+          build_dir: docs/_build/html
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
