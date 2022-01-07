@@ -21,12 +21,12 @@ common
    :scale:  32
    :alt: particle diameter E C D F of the common glass beads 
 
-*  median  =  3122.9060
-*  mean    =  3101.3435
-*  stdev   =   187.1664
-*  95 CI   =    51.5894
-*  :download:`raw data <../data/particle_properties/dp_glass.txt>`
-*  :download:`plot script <../nbs/particle_properties/plot_dp_glass.m>` (octave)
+-  median  =  3122.9060
+-  mean    =  3101.3435
+-  stdev   =   187.1664
+-  95 CI   =    51.5894
+-  :download:`raw data <../data/particle_properties/dp_glass.txt>`
+-  :download:`plot script <../nbs/particle_properties/plot_dp_glass.m>` (octave)
 
 
 large intruder
