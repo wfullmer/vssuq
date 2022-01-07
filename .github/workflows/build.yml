@@ -1,29 +1,40 @@
-name: build
- 
-# execute this build and deploy workflow automatically when a we push to master
-on:
-  push:
- 
-jobs:
- 
-  build_docs_job:
-    runs-on: ubuntu-latest
-    container: debian:buster-slim
- 
-    steps:
- 
-    - name: Prereqs
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        apt-get update
-        apt-get install -y git
-        git clone "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
-      shell: bash
- 
-    - name: Execute script to build our documentation and update pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: "docs/buildDocs.sh"
-      shell: bash
+name: Build-and-Deploy
 
+# credit to @mwm126
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  publish:
+    # Name the Job
+    name: Build Sphinx docs HTML target
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Sphinx
+        run: pip install sphinx sphinx-rtd-theme
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build docs in HTML 
+        run: make -C docs html
+        env:
+          DEFAULT_BRANCH: main
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+
+      - name: Deploy to GitHub Pages Branch
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: docs/webroot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
