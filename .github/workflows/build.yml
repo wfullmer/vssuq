@@ -33,6 +33,9 @@ jobs:
           DEFAULT_BRANCH: main
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
 
+      - name: No jekyll, bad jekyll 
+        run: touch docs/_build/html/.nojekyll 
+
       - name: Deploy to GitHub Pages Branch
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
