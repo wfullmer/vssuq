@@ -79,14 +79,14 @@ glass
 HDPE
 ^^^^
 
-:math:`\rho_p = 941` (kg/m^3)
+:math:`\rho_p = 941` |density|
 
 Note: The HDPE particles were purchased from 
 `McMaster-Carr <https://www.mcmaster.com/plastics/material~plastic/moisture-resistant-polyethylene-hdpe-balls/>`_
 in 2017 which, at the time, listed the density for these HDPE beads as 941 
-(kg/m^3). This falls at the lower end of the HDPE density range suggested 
+|density|. This falls at the lower end of the HDPE density range suggested 
 suggested by `Khanam and AlMaadeed (2015) <https://doi.org/10.1179/2055035915Y.0000000002>`_ 
-of 941 - 965 (kg/m^3), see Table 1. 
+of 941 - 965 |density|, see Table 1. 
 
 
 
@@ -259,4 +259,5 @@ small intruder
 *  :download:`plot script <../nbs/particle_properties/plot_psi_hdpe_s.m>` (octave)
 
 
+.. |density| replace:: (kg/m\ :sup:`3`\ )
 

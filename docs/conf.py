@@ -30,6 +30,13 @@ release = '0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+#wdf 
+# adding 
+#       'sphinx.ext.githubpages', 
+# below should add the .nojekyll file needed to make sure the html is 
+# rendered correctly on gh-pages. but you may also need to move it to 
+# the correct spot in the make file. currently doing this in github actions
+#wdf 
 extensions = [
         'sphinx_rtd_theme',
         'sphinx.ext.autodoc',
@@ -55,3 +62,6 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+#wdf try to add a little browser tab icon
+html_favicon = 'favicon.ico'

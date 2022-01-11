@@ -6,14 +6,28 @@
 VSSUQ for CFD-DEM
 =================
 
-**ABOUT** VSSUQ for CFD-DEM is a Very Small-Scale and associated dataset 
-specifically designed for Uncertainty Quantification studies using a coupled 
-Computational Fluid Dynamics and Discrete Element Method approach.
+.. raw:: html
+
+   <iframe src="https://www.youtube.com/embed/RkPa0iJBU6o" 
+   width="320" height="240" allowfullscreen="true" frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+Hello! The VSSUQ for CFD-DEM is a Very Small-Scale experiment and associated 
+dataset specifically designed for Uncertainty Quantification studies using a 
+coupled Computational Fluid Dynamics and Discrete Element Method approach. 
+A complete description and most reliable reference for this work can be found
+in the published paper (forthcoming). It is hoped that the summary data and its 
+underlying reference data might help facilitate modeling by potential future 
+users. The data (and source files for this documentation itself) is stored in 
+the `VSSUQ github repository. <https://github.com/wfullmer/vssuq>`_. 
+Contribution is welcome; for concerns and corrections please open an issue or 
+create a pull request in the repo. 
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   probdescription
    particleprops
 
 
