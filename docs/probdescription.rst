@@ -23,6 +23,7 @@ Problem Description
 *  Inflow superficial velocity
 
    *  :math:`U = 1.83` (m/s)
+   *  :math:`U = 1.99` (m/s)
    *  :math:`U = 2.14` (m/s)
 
 *  Outflow conditions
