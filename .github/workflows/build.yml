@@ -36,6 +36,9 @@ jobs:
       - name: No jekyll, bad jekyll 
         run: touch docs/_build/html/.nojekyll 
 
+      - name: cp README
+        run: cp docs/ghpagesREADME.md docs/_build/html/README.md
+
       - name: Deploy to GitHub Pages Branch
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
