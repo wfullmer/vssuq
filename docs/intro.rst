@@ -53,9 +53,9 @@ time :math:`t_r`, is recorded as the system response quantity (SRQ) or
 quantity of interest (QoI). The video above (and on the homepage) shows an
 example experiment with four large intruders.
 The following sections of the repo give the details of
-the system geometry and operating conditions, :ref:`sec:probdescription`,
-the particles, :ref:`sec:probdescription`,
-and the rise time results, :ref:`sec:probdescription`.
+the system geometry and operating conditions in :ref:`sec:probdescription`,
+the particles in :ref:`sec:particleprops`,
+and the rise time results in :ref:`sec:measurements`.
 
 
 .. image:: ../figs/intro/vssuq_pic.png
