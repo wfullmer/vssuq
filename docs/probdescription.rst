@@ -1,19 +1,19 @@
-.. _sec:probdescription: 
+.. _sec:probdescription:
 
-Problem Description 
+Problem Description
 ===================
 
 
-.. image:: ../figs/problem_description/vssuq_sketch.png 
+.. image:: ../figs/problem_description/vssuq_sketch.png
    :scale:  48
-   :alt: sketch of the V S S U Q experimental setup 
+   :alt: sketch of the V S S U Q experimental setup
 
 
-*  Geometry 
+*  Geometry
 
    *  :math:`L_x =  38.09 \pm 0.02` (mm)
    *  :math:`L_y = 228.6` (mm)
-   *  :math:`L_z =  38.11 \pm 0.02` (mm) 
+   *  :math:`L_z =  38.11 \pm 0.02` (mm)
 
 *  Bed mass
 
@@ -29,10 +29,10 @@ Problem Description
 *  Outflow conditions
 
    *  :math:`P_{atm} = 83.77` (kPa)
-   *  :math:`T_{atm} = 293.15` (K) 
+   *  :math:`T_{atm} = 293.15` (K)
 
-*  Notes 
+*  Notes
 
-   * TODO uncertainty on U 
-   * TODO distributor plate  
-
+   *  TODO uncertainty on U 
+   *  The distributor is a one-eighth inch thick disk, perforated 0.9 mm holes
+      in a square grid with an edge size of 3.2 mm.
