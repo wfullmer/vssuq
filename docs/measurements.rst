@@ -6,7 +6,7 @@ Measurements
 Summary
 -------
 
-The table below gives the average rise time of the intruder particles for all experimental conditions. 
+The table below gives the average rise time of the intruder particles for all experimental conditions.
 
 +-----------------+---------------+------------+----------------------------+----------------------------+----------------------------+----------------------------+--------------------------------------------------------+
 | :math:`U` (m/s) | :math:`M` (g) | intruders  | :math:`t_r^{(1)}` (s)      | :math:`t_r^{(2)}` (s)      | :math:`t_r^{(3)}` (s)      | :math:`t_r^{(4)}` (s)      | raw data                                               |
@@ -33,9 +33,7 @@ Comments
 --------
 
 *  TODO
-*  Error bars on the :math:`t_r` mean values are 95% CIs determined from a *t*-test. 
+*  Error bars on the :math:`t_r` mean values are 95% CIs determined from a *t*-test.
 *  Raw ascii data processed with this simple :download:`octave script <../nbs/measurements/stat_rise_times.m>`
-*  center and random combined corner elminated
-*  level 1 not considered 
-
-
+*  center and random combined corner eliminated
+*  level 1 not considered
