@@ -30,7 +30,7 @@ Following the single-phase CFD community, the focus of multiphase CFD is slowly
 shifting from a single prediction or a best guess with a few parametric studies
 to actually quantifying the influence of uncertain input parameters on the
 quantity of interest. Due to the large number of CFD-DEM model inputs, an
-intrusive UQ simulation campaign may (TODO softer than) require 100's or 1000's
+intrusive UQ simulation campaign may require 100's or 1000's
 of simulations. Therefore, the scale of the problem size which is feasible
 decreases significantly. From the onset, the goal of the VSSUQ was to create a
 validation dataset specifically for CFD-DEM with UQ. To accomplish this goal,
