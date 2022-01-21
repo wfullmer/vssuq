@@ -32,8 +32,19 @@ The table below gives the average rise time of the intruder particles for all ex
 Comments
 --------
 
-*  TODO
+*  Collapsed data: The original experiments played around with the position of
+   intruder particle, specifically for one large intruder. It was found that
+   there was no statistically significant difference between center and randomized
+   placement. Therefore these two configurations have been collapsed here.
+   Technically, the one large intruder, :math:`U = 1.82` (m/s), and
+   :math:`M = 177.46` (g) and the first seven measurements of the
+   :math:`M = 227.47` (g) conditions have a center placement. All other conditions
+   have a random placement.
+*  Excluded data: To further study the influence of the initial configuration,
+   experiments were also conducted with the intruders placed in the corner of
+   the bed and on top of a single layer of common glass beads. Unlike random
+   *vs* center placement, these configurations affect the rise time. This data
+   can be found in the Supplementary Material of
+   `LaMarche, et al. (2022) <https://TODO.edu>`_
 *  Error bars on the :math:`t_r` mean values are 95% CIs determined from a *t*-test.
 *  Raw ascii data processed with this simple :download:`octave script <../nbs/measurements/stat_rise_times.m>`
-*  center and random combined corner eliminated
-*  level 1 not considered

@@ -34,8 +34,10 @@ Problem Description
 *  Notes
 
    *  To clarify, there is only one bed mass and gas flow rate
-      for a given run. The set of experimental conditions used are defined 
+      for a given run. The set of experimental conditions used are defined
       in :ref:`sec:measurements`.
    *  TODO uncertainty on U
    *  The distributor is a one-eighth inch thick disk, perforated 0.9 mm holes
       in a square grid with an edge size of 3.2 mm.
+   *  The uncertainty in the atmospheric temperature is estimated to be
+      approximately 5 (K). The uncertainty in the atmospheric pressure unknown. 
