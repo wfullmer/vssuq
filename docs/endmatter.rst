@@ -96,6 +96,15 @@ References
    small particles, *Powder Technology*, **110**, 158-168.
 
 
+Appendices
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   appx_Ucalc
+
+
 Acknowledgements
 ----------------
 
