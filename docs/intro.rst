@@ -17,13 +17,14 @@ specifically to provide validation data for the recently developed CFD-DEM
 model. Two of these earliest examples are due to
 `Yuu, Umekage and Johno (2000) <https://doi.org/10.1016/S0032-5910(99)00277-6>`_
 and  `Hoomans, et al. (2001) <https://doi.org/10.1016/S0032-5910(00)00391-0>`_.
-Table 1 of LaMarche, et al. (2022) <https://TODO.edu>`_ provides a list of many
-of the CFD-DEM validation experiments of the past 20+ years. One of the common
-themes of these CFD-DEM validation experiments is their scale: the particle count
-should not exceed a few million if they are to be modeled as discrete elements
-due to the computational expense of CFD-DEM and current computational resources
-available to most researchers. Most of the datasets in LaMarche et al. (2022)'s
-Table 1 contain approx. 100,000 particles or fewer.
+Table 1 of `LaMarche, et al. (2022) <https://doi.org/10.1002/aic.17643>`_ 
+provides a list of many of the CFD-DEM validation experiments of the past 20+ 
+years. One of the common themes of these CFD-DEM validation experiments is 
+their scale: the particle count should not exceed a few million if they are 
+to be modeled as discrete elements due to the computational expense of 
+CFD-DEM and current computational resources available to most researchers. 
+Most of the datasets in LaMarche et al. (2022)'s Table 1 contain approx. 
+100,000 particles or fewer.
 
 
 Following the single-phase CFD community, the focus of multiphase CFD is slowly

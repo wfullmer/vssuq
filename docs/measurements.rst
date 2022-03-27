@@ -45,6 +45,6 @@ Comments
    the bed and on top of a single layer of common glass beads. Unlike random
    *vs* center placement, these configurations affect the rise time. This data
    can be found in the Supplementary Material of
-   `LaMarche, et al. (2022) <https://TODO.edu>`_
+   `LaMarche, et al. (2022) <https://doi.org/10.1002/aic.17643>`_
 *  Error bars on the :math:`t_r` mean values are 95% CIs determined from a *t*-test.
 *  Raw ascii data processed with this simple :download:`octave script <../nbs/measurements/stat_rise_times.m>`
