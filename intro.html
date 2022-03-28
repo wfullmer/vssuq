@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction &mdash; vssuq 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Problem Description" href="probdescription.html" />
+    <link rel="prev" title="VSSUQ for CFD-DEM" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> vssuq
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probdescription.html">Problem Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="particleprops.html">Particle Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="measurements.html">Measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endmatter.html">End Matter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">vssuq</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Introduction</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction">
+<span id="sec-intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h1>
+<center>
+<iframe src="https://www.youtube.com/embed/RkPa0iJBU6o?autoplay=1&loop=1"
+width="320" height="240" allowfullscreen="true" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+</center><p>Beginning in the late 1990’s, fluidized bed experiments were being designed
+specifically to provide validation data for the recently developed CFD-DEM
+model. Two of these earliest examples are due to
+<a class="reference external" href="https://doi.org/10.1016/S0032-5910(99)00277-6">Yuu, Umekage and Johno (2000)</a>
+and  <a class="reference external" href="https://doi.org/10.1016/S0032-5910(00)00391-0">Hoomans, et al. (2001)</a>.
+Table 1 of <a class="reference external" href="https://doi.org/10.1002/aic.17643">LaMarche, et al. (2022)</a>
+provides a list of many of the CFD-DEM validation experiments of the past 20+
+years. One of the common themes of these CFD-DEM validation experiments is
+their scale: the particle count should not exceed a few million if they are
+to be modeled as discrete elements due to the computational expense of
+CFD-DEM and current computational resources available to most researchers.
+Most of the datasets in LaMarche et al. (2022)’s Table 1 contain approx.
+100,000 particles or fewer.</p>
+<p>Following the single-phase CFD community, the focus of multiphase CFD is slowly
+shifting from a single prediction or a best guess with a few parametric studies
+to actually quantifying the influence of uncertain input parameters on the
+quantity of interest. Due to the large number of CFD-DEM model inputs, an
+intrusive UQ simulation campaign may require 100’s or 1000’s
+of simulations. Therefore, the scale of the problem size which is feasible
+decreases significantly. From the onset, the goal of the VSSUQ was to create a
+validation dataset specifically for CFD-DEM with UQ. To accomplish this goal,
+we sought a particulate experiment which satisfied the following requirements:</p>
+<ol class="arabic simple">
+<li><p>a small number of particles, less than 10,000</p></li>
+<li><p>a speedy observable</p></li>
+<li><p>all uncertainties characterized or bounded</p></li>
+<li><p>multiphase</p></li>
+</ol>
+<p>The experiment that was designed to meet these experiments, the VSSUQ, is the
+small, rectangular bed, pictured below, containing
+a few thousand common particles (glass beads) and couple (one, two, or four)
+intruder particles. The lighter (HDPE) intruder particles are placed on the
+bottom and, once fluidized, percolate through the bed within a few seconds the
+granular segregation instability, i.e., the Brazil nut effect
+<a class="reference external" href="https://doi.org/10.1103/PhysRevLett.58.1038">(Rosato, et al. 1987)</a>.
+The time it takes the intruders to emerge on the surface, the rise
+time <span class="math notranslate nohighlight">\(t_r\)</span>, is recorded as the system response quantity (SRQ) or
+quantity of interest (QoI). The video above (and on the homepage) shows an
+example experiment with four large intruders.
+The following sections of the repo give the details of
+the system geometry and operating conditions in <a class="reference internal" href="probdescription.html#sec-probdescription"><span class="std std-ref">Problem Description</span></a>,
+the particles in <a class="reference internal" href="particleprops.html#sec-particleprops"><span class="std std-ref">Particle Properties</span></a>,
+and the rise time results in <a class="reference internal" href="measurements.html#sec-measurements"><span class="std std-ref">Measurements</span></a>.</p>
+<a class="reference internal image-reference" href="_images/vssuq_pic.png"><img alt="example image of the V S S U Q experiment" src="_images/vssuq_pic.png" style="width: 230.39999999999998px; height: 288.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="VSSUQ for CFD-DEM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="probdescription.html" class="btn btn-neutral float-right" title="Problem Description" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, wdf.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

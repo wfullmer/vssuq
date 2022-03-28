@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Particle Properties &mdash; vssuq 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Measurements" href="measurements.html" />
+    <link rel="prev" title="Problem Description" href="probdescription.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> vssuq
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probdescription.html">Problem Description</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Particle Properties</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#particle-diameter">Particle Diameter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#common">common</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#large-intruder">large intruder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#small-intruder">small intruder</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#density">Density</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#glass">glass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdpe">HDPE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#restitution-coefficients">Restitution Coefficients</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#glass-glass">glass-glass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#glass-hdpe">glass-HDPE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hdpe-hdpe">HDPE-HDPE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#glass-wall">glass-wall</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#friction-coefficients">Friction Coefficients</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">glass-glass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">glass-HDPE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">HDPE-HDPE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">glass-wall</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sphericity">Sphericity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">common</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">large intruder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">small intruder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="measurements.html">Measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endmatter.html">End Matter</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">vssuq</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Particle Properties</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/particleprops.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="particle-properties">
+<span id="sec-particleprops"></span><h1>Particle Properties<a class="headerlink" href="#particle-properties" title="Permalink to this headline"></a></h1>
+<p>In this section we provide images of the empirical cumulative distribution
+function (eCDF) for the measured particle properties. Links to the raw data
+and octave scripts used to generate each image are provided with simple
+statistics for each eCDF. Properties include diameter (<span class="math notranslate nohighlight">\(d_p\)</span>),
+restitution coefficient (<span class="math notranslate nohighlight">\(e_{pp}\)</span>), friction coefficient
+(<span class="math notranslate nohighlight">\(\mu_{pp}\)</span>), and sphericity (<span class="math notranslate nohighlight">\(\Psi\)</span>), for the common glass beads
+and HDPE intruders.</p>
+<section id="particle-diameter">
+<h2>Particle Diameter<a class="headerlink" href="#particle-diameter" title="Permalink to this headline"></a></h2>
+<section id="common">
+<h3>common<a class="headerlink" href="#common" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/dp_glass.png"><img alt="particle diameter E C D F of the common glass beads" src="_images/dp_glass.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =  3122.9060</p></li>
+<li><p>mean    =  3101.3435</p></li>
+<li><p>stdev   =   187.1664</p></li>
+<li><p>95 CI   =    51.5894</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/024839d218a2976ae0cbbb2d5a4317d7/dp_glass.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/c9d5083dc98c32ac0abff94bb177e55f/plot_dp_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="large-intruder">
+<h3>large intruder<a class="headerlink" href="#large-intruder" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/dp_hdpe_l.png"><img alt="particle diameter E C D F of the large H D P E intruders" src="_images/dp_hdpe_l.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =  9467.0242</p></li>
+<li><p>mean    =  9430.4494</p></li>
+<li><p>stdev   =   118.4190</p></li>
+<li><p>95 CI   =    40.6783</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/3347981cfadedff0fb331bacff3d2501/dp_hdpe_l.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/31186b954f7163867f8c0a0c7bee8f34/plot_dp_hdpe_l.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="small-intruder">
+<h3>small intruder<a class="headerlink" href="#small-intruder" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/dp_hdpe_s.png"><img alt="particle diameter E C D F of the small H D P E intruders" src="_images/dp_hdpe_s.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =  3150.9098</p></li>
+<li><p>mean    =  3154.8691</p></li>
+<li><p>stdev   =    31.9635</p></li>
+<li><p>95 CI   =     9.8369</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/3189d36804f80ee4f69ef6520d23a393/dp_hdpe_s.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/63bf94e4dea88883de37ec5d561b2fb1/plot_dp_hdpe_s.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+</section>
+<section id="density">
+<h2>Density<a class="headerlink" href="#density" title="Permalink to this headline"></a></h2>
+<section id="glass">
+<h3>glass<a class="headerlink" href="#glass" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/rhop_glass.png"><img alt="particle density E C D F of the common glass beads" src="_images/rhop_glass.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =  2508.0000</p></li>
+<li><p>mean    =  2522.3478</p></li>
+<li><p>stdev   =   125.5905</p></li>
+<li><p>95 CI   =    54.3094</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/b244a1e0650ded8272c22dc9e7b643c7/rhop_glass.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/4197869541cb05726aab0b07933cc962/plot_rhop_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="hdpe">
+<h3>HDPE<a class="headerlink" href="#hdpe" title="Permalink to this headline"></a></h3>
+<p><span class="math notranslate nohighlight">\(\rho_p = 941\)</span> (kg/m<sup>3</sup>)</p>
+<p>Note: The HDPE particles were purchased from
+<a class="reference external" href="https://www.mcmaster.com/plastics/material~plastic/moisture-resistant-polyethylene-hdpe-balls/">McMaster-Carr</a>
+in 2017 which, at the time, listed the density for these HDPE beads as 941
+(kg/m<sup>3</sup>). This falls at the lower end of the HDPE density range suggested
+suggested by <a class="reference external" href="https://doi.org/10.1179/2055035915Y.0000000002">Khanam and AlMaadeed (2015)</a>
+of 941 - 965 (kg/m<sup>3</sup>), see Table 1.</p>
+</section>
+</section>
+<section id="restitution-coefficients">
+<h2>Restitution Coefficients<a class="headerlink" href="#restitution-coefficients" title="Permalink to this headline"></a></h2>
+<section id="glass-glass">
+<h3>glass-glass<a class="headerlink" href="#glass-glass" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/epp_glass-glass.png"><img alt="particle-particle restitution coefficient E C D F for glass and glass particles" src="_images/epp_glass-glass.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.9714</p></li>
+<li><p>mean    =     0.9696</p></li>
+<li><p>stdev   =     0.0150</p></li>
+<li><p>95 CI   =     0.0063</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/aecf0f4c9b32012a1913d10a04e8931e/epp_glass-glass.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/5682855a3f8e19a9cffcf669ac23deaa/plot_epp_glass_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="glass-hdpe">
+<h3>glass-HDPE<a class="headerlink" href="#glass-hdpe" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/epp_glass-hdpe.png"><img alt="particle-particle restitution coefficient E C D F for glass and H D P E particles" src="_images/epp_glass-hdpe.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.8283</p></li>
+<li><p>mean    =     0.8230</p></li>
+<li><p>stdev   =     0.0172</p></li>
+<li><p>95 CI   =     0.0047</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/09bd46c81ec640b03bccaab975710e88/epp_glass-hdpe.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ae1c7d2991033fc0b67e31c72b0a7ed1/plot_epp_glass_hdpe.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="hdpe-hdpe">
+<h3>HDPE-HDPE<a class="headerlink" href="#hdpe-hdpe" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/epp_hdpe-hdpe.png"><img alt="particle-particle restitution coefficient E C D F for H D P E and H D P E particles" src="_images/epp_hdpe-hdpe.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.8215</p></li>
+<li><p>mean    =     0.8217</p></li>
+<li><p>stdev   =     0.0155</p></li>
+<li><p>95 CI   =     0.0044</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/a6da35c523650838ef77de67320cfcde/epp_hdpe-hdpe.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ea0b12fd360d18bd20e1bdc26570598c/plot_epp_hdpe_hdpe.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="glass-wall">
+<h3>glass-wall<a class="headerlink" href="#glass-wall" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/epw_glass-acrylic.png"><img alt="particle-wall restitution coefficient E C D F for glass particles" src="_images/epw_glass-acrylic.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.9642</p></li>
+<li><p>mean    =     0.9549</p></li>
+<li><p>stdev   =     0.0374</p></li>
+<li><p>95 CI   =     0.0055</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/8725e2eebf169eb7b12004346e5d49e3/epw_glass-acrylic.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/88d4fb560de6a6167a9a204bc065fb14/plot_epw_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+</section>
+<section id="friction-coefficients">
+<h2>Friction Coefficients<a class="headerlink" href="#friction-coefficients" title="Permalink to this headline"></a></h2>
+<section id="id1">
+<h3>glass-glass<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/mupp_glass-glass.png"><img alt="particle-particle friction coefficient E C D F for glass and glass particles" src="_images/mupp_glass-glass.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.2623</p></li>
+<li><p>mean    =     0.2736</p></li>
+<li><p>stdev   =     0.0674</p></li>
+<li><p>95 CI   =     0.0152</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/195805198027d2dfb7e6a3e239e1d9ee/mupp_glass-glass.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/2b630f0d3369a508edb6d2de38c65b7a/plot_mupp_glass_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>glass-HDPE<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/mupp_glass-hdpe.png"><img alt="particle-particle friction coefficient E C D F for glass and HDPE particles" src="_images/mupp_glass-hdpe.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.2991</p></li>
+<li><p>mean    =     0.3041</p></li>
+<li><p>stdev   =     0.0742</p></li>
+<li><p>95 CI   =     0.0192</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ef0e6355ed7fcb97fb7359ae298ebf06/mupp_glass-hdpe.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/080dfddbb621beabd66fcc6d87b19f26/plot_mupp_glass_hdpe.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>HDPE-HDPE<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/mupp_hdpe-hdpe.png"><img alt="particle-particle friction coefficient E C D F for glass and H D P E particles" src="_images/mupp_hdpe-hdpe.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.3792</p></li>
+<li><p>mean    =     0.3768</p></li>
+<li><p>stdev   =     0.0279</p></li>
+<li><p>95 CI   =     0.0076</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/f200435c1ef8ea0ad477fdf6627108a9/mupp_hdpe-hdpe.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ff6ab88b3a01c92b9d0028a6f6f5c0ae/plot_mupp_hdpe_hdpe.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>glass-wall<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/mupw_glass-acrylic.png"><img alt="particle-wall friction coefficient E C D F for glass" src="_images/mupw_glass-acrylic.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.2490</p></li>
+<li><p>mean    =     0.2514</p></li>
+<li><p>stdev   =     0.0756</p></li>
+<li><p>95 CI   =     0.0204</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/622a8d3433d6844180c42a41729a58d5/mupw_glass-acrylic.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/ebca255a3b8dd0e2e8c97f8f9be9fdad/plot_mupw_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+</section>
+<section id="sphericity">
+<h2>Sphericity<a class="headerlink" href="#sphericity" title="Permalink to this headline"></a></h2>
+<section id="id5">
+<h3>common<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/psi_glass.png"><img alt="particle diameter E C D F of the common glass beads" src="_images/psi_glass.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.9435</p></li>
+<li><p>mean    =     0.9393</p></li>
+<li><p>stdev   =     0.0167</p></li>
+<li><p>95 CI   =     0.0046</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/338640dbb10039fe331cda15cd805a8c/psi_glass.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/8ec9d02bc91e58369808b1550c83fd45/plot_psi_glass.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>large intruder<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/psi_hdpe_l.png"><img alt="particle diameter E C D F of the large H D P E intruders" src="_images/psi_hdpe_l.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.9372</p></li>
+<li><p>mean    =     0.9314</p></li>
+<li><p>stdev   =     0.0147</p></li>
+<li><p>95 CI   =     0.0050</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/6f4429d813b83bf6fcc88727252e255f/psi_hdpe_l.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/10e82ff485ba6d9e49a69df8126e90fe/plot_psi_hdpe_l.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>small intruder<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<a class="reference internal image-reference" href="_images/psi_hdpe_s.png"><img alt="particle diameter E C D F of the small H D P E intruders" src="_images/psi_hdpe_s.png" style="width: 288.0px; height: 288.0px;" /></a>
+<ul class="simple">
+<li><p>median  =     0.9211</p></li>
+<li><p>mean    =     0.9147</p></li>
+<li><p>stdev   =     0.0245</p></li>
+<li><p>95 CI   =     0.0076</p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/8ca982a9d23c9f7b8dd90a59cb31f75b/psi_hdpe_s.txt"><code class="xref download docutils literal notranslate"><span class="pre">raw</span> <span class="pre">data</span></code></a></p></li>
+<li><p><a class="reference download internal" download="" href="_downloads/431b01b66f6b75e919ddf4bd227ce3fc/plot_psi_hdpe_s.m"><code class="xref download docutils literal notranslate"><span class="pre">plot</span> <span class="pre">script</span></code></a> (octave)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="probdescription.html" class="btn btn-neutral float-left" title="Problem Description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="measurements.html" class="btn btn-neutral float-right" title="Measurements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, wdf.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
