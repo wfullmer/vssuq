@@ -15,7 +15,7 @@ Appendix: flowrate calculation
 
 
 The gas flow rate is set to one of the three conditions listed in the table 
-above. The flow rate is measured, in standard cubid feet per minute (SCFM), 
+above. The flow rate is measured, in standard cubic feet per minute (SCFM), 
 and the back pressure is set with a pressure gage. Both the rotameter and the 
 pressure gage are reported to have an accuracy of 2%. In the rotameter, the 
 flow rate is measured by a float which balances the force of gravity, 
@@ -33,7 +33,7 @@ The flat properties are constant and we assume that drag coefficient is
 relatively constant and, because the working fluid is a gas, 
 :math:`\rho_F - \rho_g \approx \rho_F`. Therefore, 
 
-.. math::  v_g ~ \rho_g^{-1/2}
+.. math::  v_g \propto \rho_g^{-1/2}
 
 Using the ideal gas law,
 
@@ -41,7 +41,7 @@ Using the ideal gas law,
 
 the proportionality becomes 
 
-.. math:: v_g ~ \sqrt{T_g / P_g}
+.. math:: v_g \propto \sqrt{T_g / P_g}
 
 Then, we can write an approximate expression relating two flow states, 
 
@@ -119,7 +119,7 @@ where :math:`\epsilon x_i = \delta x_i / x_i` for the uncertainties given as
 relative errors. The superficial velocity and uncertainty is calculated for 
 each condition with this simple 
 :download:`octave script <../nbs/problem_description/calc_dU.m>`. 
-We note that, when rounded to three sig. figs., the third condition differes 
+We note that, when rounded to three sig. figs., the third condition differs 
 slightly from the value of :math:`U = 2.14` reported in 
 `LaMarche, et al. (2022) <https://doi.org/10.1002/aic.17643>`_. 
 This difference is due to the very minor difference between the lab 
